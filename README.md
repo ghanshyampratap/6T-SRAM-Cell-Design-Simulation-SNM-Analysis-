@@ -19,6 +19,7 @@ There are multiple types of semiconductor memory as shown in Fig. 1.
 ### 📷 Fig 1 – Memory Hierarchy  
 <img width="416" height="151" alt="image" src="https://github.com/user-attachments/assets/f9baeb6a-1947-4868-ba24-62631397a4d0" />
 
+
 SRAM is widely used in battery-operated and low-power devices because of its:
 - Low area requirement  
 - Low read/write delay  
