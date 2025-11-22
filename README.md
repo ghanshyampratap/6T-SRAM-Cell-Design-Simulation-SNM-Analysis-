@@ -1,4 +1,4 @@
-# 🧪 6T SRAM Cell Design, Simulation & SNM Analysis | 90nm CMOS | Cadence Virtuoso
+# 🧪 6T SRAM Cell Design, Simulation & SNM Analysis Cadence Virtuoso
 
 ## 📝 Abstract
 Static Random Access Memory (SRAM) is one of the most significant memory devices used for storing data on-chip. SRAM plays a crucial role in VLSI chips due to its **high storage density**, **fast access time**, and suitability for **low-power applications**.  
