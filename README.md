@@ -109,7 +109,8 @@ It is measured by plotting:
 The two curves form the characteristic **“Butterfly Curve.”**
 
 ### 📷 Fig 2 – Standard SRAM Structure  
-<img width="250" height="188" alt="image" src="https://github.com/user-attachments/assets/d75f9083-30b6-483d-a2d6-1b3c36ea436b" />
+<img width="260" height="195" alt="image" src="https://github.com/user-attachments/assets/7cd980e2-7071-449c-8a2c-d94028e4e7d5" />
+
 
 
 ### 📷 Fig 3 – SNM Butterfly Curve  
