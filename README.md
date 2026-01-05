@@ -1,6 +1,6 @@
-# 🧪 6T SRAM Cell Design, Simulation & SNM Analysis Cadence Virtuoso
+#  6T SRAM Cell Design, Simulation & SNM Analysis Cadence Virtuoso
 
-## 📝 Abstract
+##  Abstract
 Static Random Access Memory (SRAM) is one of the most significant memory devices used for storing data on-chip. SRAM plays a crucial role in VLSI chips due to its **high storage density**, **fast access time**, and suitability for **low-power applications**.  
 
 This project presents the **design and implementation of a 6T SRAM cell** including:
@@ -13,10 +13,10 @@ All simulations were performed using **Cadence Virtuoso** in a **90nm CMOS techn
 
 ---
 
-## 📘 Introduction
+##  Introduction
 There are multiple types of semiconductor memory as shown in Fig. 1.
 
-### 📷 Fig 1 – Memory Hierarchy  
+###  Fig 1 – Memory Hierarchy  
 <img width="416" height="151" alt="image" src="https://github.com/user-attachments/assets/f9baeb6a-1947-4868-ba24-62631397a4d0" />
 
 
@@ -38,44 +38,44 @@ A typical SRAM cell consists of **six MOSFETs (6T)** — four transistors form t
 
 ---
 
-# 🔧 CONVENTIONAL 6T SRAM
+#  CONVENTIONAL 6T SRAM
 <img width="260" height="195" alt="image" src="https://github.com/user-attachments/assets/9c3a988e-ee95-4346-bfa3-e153d9f7520c" />
 
 
 
-## ⚙️ Working
+##  Working
 A 6T SRAM cell consists of:
 - **Two cross-coupled inverters:** M1–M2 (inv1), M3–M4 (inv2)  
 - **Two access transistors:** M5 & M6 connected to BL and BLB  
 
 Data is stored as a stable state between Q and Q̅.
 
-### ✔ Write Operation
+###  Write Operation
 - WL = 1 (enabled)  
 - BL and BLB are driven with input data  
 - The cross-coupled inverters switch state and write the new data  
 
-### ✔ Read Operation
+###  Read Operation
 - WL = 1  
 - BL and BLB are precharged to Vdd  
 - Depending on stored value, one bitline discharges  
 - Sense amplifier detects the differential voltage  
 
-### ✔ Hold Mode
+###  Hold Mode
 - WL = 0  
 - Access transistors OFF  
 - Data at Q and Q̅ remains stable  
 
-### 📌 Important Condition  
+###  Important Condition  
 The cell must be:
 - **Weak enough** to be overwritten during write  
 - **Strong enough** to retain data during read  
 
 ---
 
-# 🔄 READ / WRITE OPERATION (Detailed)
+#  READ / WRITE OPERATION (Detailed)
 
-## 📥 READ Operation
+##  READ Operation
 - WL = HIGH  
 - Consider stored data Q = 1, Q̅ = 0  
 - BL remains HIGH  
@@ -87,7 +87,7 @@ Similarly, for Q = 0, Q̅ = 1:
 
 ---
 
-## ✍️ WRITE Operation
+##  WRITE Operation
 Consider Q = 0, Q̅ = 1:
 - WL = HIGH  
 - BLB = 0 (forcing Q̅ low)  
@@ -98,9 +98,9 @@ If BL and BLB do not create voltage difference → memory retains original value
 
 ---
 
-# 📉 Static Noise Margin (SNM) Analysis
+#  Static Noise Margin (SNM) Analysis
 
-## 📘 Theory
+##  Theory
 SNM determines **stability** of the SRAM cell.  
 It is measured by plotting:
 
@@ -109,12 +109,12 @@ It is measured by plotting:
 
 The two curves form the characteristic **“Butterfly Curve.”**
 
-### 📷 Fig 2 – Standard SRAM Structure  
+###  Fig 2 – Standard SRAM Structure  
 <img width="260" height="195" alt="image" src="https://github.com/user-attachments/assets/7cd980e2-7071-449c-8a2c-d94028e4e7d5" />
 
 
 
-### 📷 Fig 3 – SNM Butterfly Curve  
+###  Fig 3 – SNM Butterfly Curve  
 <img width="600" height="527" alt="image" src="https://github.com/user-attachments/assets/8f24aefe-821e-429f-8b08-7ec08f07d591" />
 
 
@@ -127,27 +127,27 @@ Noise source Vn shifts both VTC curves, reducing margin → risk of incorrect re
 
 ---
 
-# 🧪 Simulation Results
+#  Simulation Results
 
-## 📷 Schematic of 6T SRAM  
+##  Schematic of 6T SRAM  
 <img width="1203" height="624" alt="image" src="https://github.com/user-attachments/assets/732ac13d-6e48-4d6a-a996-6eea043ff761" />
 
 
 ---
 
-## 📷 SNM Curve / Butterfly Plot  
+##  SNM Curve / Butterfly Plot  
 <img width="1239" height="710" alt="image" src="https://github.com/user-attachments/assets/51ddde90-b912-41ce-847c-be33fa28d620" />
 
 
 ---
 
-## 📷 SRAM Layout  
+##  SRAM Layout  
 <img width="578" height="627" alt="image" src="https://github.com/user-attachments/assets/ea6c1da5-cd8b-481f-93aa-c2bda74bba75" />
 
 
 ---
 
-# 🏁 Conclusion
+#  Conclusion
 - The analysis of the **6T SRAM cell** was successfully performed.  
 - The **Static Noise Margin (SNM)** was measured using butterfly curves for both read and write conditions.  
 - All simulations were completed in **Cadence Virtuoso (90nm CMOS)**.  
@@ -155,7 +155,7 @@ Noise source Vn shifts both VTC curves, reducing margin → risk of incorrect re
 
 ---
 
-# 🚀 Future Works
+#  Future Works
 Important supporting circuits for SRAM arrays include:
 
 - Row Decoder  
